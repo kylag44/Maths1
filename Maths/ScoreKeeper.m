@@ -20,5 +20,7 @@
 }
     NSString *scoreString = [NSString stringWithFormat:@"score: %@ right, %@ wrong --- %.1f%%\n", @(self.right), @(self.wrong), self.right/(self.right + self.wrong)*100];
     return scoreString;
+    
+    
 }
 @end
