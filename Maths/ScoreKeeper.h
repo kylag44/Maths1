@@ -10,4 +10,9 @@
 
 @interface ScoreKeeper : NSObject
 
+@property (nonatomic, assign) float right;
+@property (nonatomic, assign) float wrong;
+
+-(NSString *)yourScore:(NSString *)result;
+
 @end

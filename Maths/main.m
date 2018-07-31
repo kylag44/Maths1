@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
+#import "ScoreKeeper.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        ScoreKeeper *score = [[ScoreKeeper alloc] init];
+        
         while (YES) {
             
             NSLog(@"MATHS!"); 
@@ -20,16 +24,15 @@ int main(int argc, const char * argv[]) {
             InputHandler *iH = [[InputHandler alloc] init];
             NSString *input = [iH getInput];
 
-//            NSLog(@"%@", [iH getInput]);
+
             
             
             if ([input isEqual:@"quit"]) {
                 break;
             }
             NSLog(@"%@", [maths evaluate:[input intValue]]);
-            
-            
-            
+            NSLog(@"%@", [score yourScore:[maths evaluate:[input intValue]]]); 
+           
             
         }
     
