@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AdditionQuestion.h"
+#import "InputHandler.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -16,20 +17,16 @@ int main(int argc, const char * argv[]) {
             NSLog(@"MATHS!"); 
         
             AdditionQuestion *maths = [[AdditionQuestion alloc] init];
+            InputHandler *iH = [[InputHandler alloc] init];
+            NSString *input = [iH getInput];
+
+//            NSLog(@"%@", [iH getInput]);
             
-            char inputNumbers[255];
-            //get user to input
-            NSLog(@"Input your answer: ");
-            fgets(inputNumbers, 255, stdin);
-//            turn c into NSString
-            NSString *result = [[NSString alloc] initWithCString:inputNumbers encoding:NSUTF8StringEncoding];
-            //eliminate the white space
-            result = [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            NSLog(@"%@", result);
-            if ([result isEqual:@"quit"]) {
+            
+            if ([input isEqual:@"quit"]) {
                 break;
             }
-            NSLog(@"%@", [maths evaluate:[result intValue]]);
+            NSLog(@"%@", [maths evaluate:[input intValue]]);
             
             
             
