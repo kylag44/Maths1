@@ -11,19 +11,22 @@
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
+#import "KHGQuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         ScoreKeeper *score = [[ScoreKeeper alloc] init];
         QuestionManager *qM = [[QuestionManager alloc] init];
+        KHGQuestionFactory *qf = [[KHGQuestionFactory alloc] init];
         
         while (YES) {
             
+            
             NSLog(@"MATHS!"); 
         
-            KHGQuestion *maths = [[KHGQuestion alloc] init];
-            
+            KHGQuestion *maths = [qf generateRandomQuestion];
+            NSLog(@"%@", maths.question);
             //adding right and wrong to the array 
             [qM.questions addObject:maths];
             
@@ -43,7 +46,7 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@", [maths evaluate:[input intValue]]);
             
  
-            NSLog(@"%@", [score yourScore:[maths evaluate:[input intValue]]]); 
+            NSLog(@"%@", [score yourScore:[maths evaluate:[input intValue]]]);
            
             double timedAnswer = [maths answerTime];
 //            NSLog(@"%fseconds", timedAnswer);

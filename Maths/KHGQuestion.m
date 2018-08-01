@@ -23,7 +23,7 @@
         _rightValue = (arc4random_uniform(91) + 10);
         _leftValue = (arc4random_uniform(91) + 10);
 //        _question = [NSString stringWithFormat:@"%@ + %@ = ?", @(_rightValue), @(_leftValue)];
-        NSLog(@"%@", _question);
+//        NSLog(@"%@", _question);
 //                     _answer = _rightValue + _leftValue;
 
         
