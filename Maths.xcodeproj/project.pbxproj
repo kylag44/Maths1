@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		254BBD4D2110D14E006AB120 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 254BBD4C2110D14E006AB120 /* AdditionQuestion.m */; };
+		252F78E821120BC700DF61D7 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 252F78E721120BC700DF61D7 /* QuestionManager.m */; };
+		252F78EB2112267C00DF61D7 /* KHGAdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 252F78EA2112267C00DF61D7 /* KHGAdditionQuestion.m */; };
+		252F78EE211226AE00DF61D7 /* KHGSubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 252F78ED211226AE00DF61D7 /* KHGSubtractionQuestion.m */; };
+		252F78F1211226CA00DF61D7 /* KHGMultiplicationQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 252F78F0211226CA00DF61D7 /* KHGMultiplicationQuestion.m */; };
+		252F78F4211226DD00DF61D7 /* KHGDivisionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 252F78F3211226DD00DF61D7 /* KHGDivisionQuestion.m */; };
+		254BBD4D2110D14E006AB120 /* KHGQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 254BBD4C2110D14E006AB120 /* KHGQuestion.m */; };
 		25C5A2862110C4B30025B981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C5A2852110C4B30025B981 /* main.m */; };
 		25E6FED02110E7D8000A6418 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E6FECF2110E7D8000A6418 /* InputHandler.m */; };
 		25E6FED32110EEB3000A6418 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E6FED22110EEB3000A6418 /* ScoreKeeper.m */; };
@@ -26,8 +31,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		254BBD4B2110D14E006AB120 /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
-		254BBD4C2110D14E006AB120 /* AdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		252F78E621120BC700DF61D7 /* QuestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		252F78E721120BC700DF61D7 /* QuestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		252F78E92112267C00DF61D7 /* KHGAdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHGAdditionQuestion.h; sourceTree = "<group>"; };
+		252F78EA2112267C00DF61D7 /* KHGAdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHGAdditionQuestion.m; sourceTree = "<group>"; };
+		252F78EC211226AE00DF61D7 /* KHGSubtractionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHGSubtractionQuestion.h; sourceTree = "<group>"; };
+		252F78ED211226AE00DF61D7 /* KHGSubtractionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHGSubtractionQuestion.m; sourceTree = "<group>"; };
+		252F78EF211226CA00DF61D7 /* KHGMultiplicationQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHGMultiplicationQuestion.h; sourceTree = "<group>"; };
+		252F78F0211226CA00DF61D7 /* KHGMultiplicationQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHGMultiplicationQuestion.m; sourceTree = "<group>"; };
+		252F78F2211226DD00DF61D7 /* KHGDivisionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHGDivisionQuestion.h; sourceTree = "<group>"; };
+		252F78F3211226DD00DF61D7 /* KHGDivisionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHGDivisionQuestion.m; sourceTree = "<group>"; };
+		254BBD4B2110D14E006AB120 /* KHGQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHGQuestion.h; sourceTree = "<group>"; };
+		254BBD4C2110D14E006AB120 /* KHGQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHGQuestion.m; sourceTree = "<group>"; };
 		25C5A2822110C4B30025B981 /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C5A2852110C4B30025B981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25E6FECE2110E7D8000A6418 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
@@ -67,12 +82,22 @@
 			isa = PBXGroup;
 			children = (
 				25C5A2852110C4B30025B981 /* main.m */,
+				252F78F2211226DD00DF61D7 /* KHGDivisionQuestion.h */,
+				252F78F3211226DD00DF61D7 /* KHGDivisionQuestion.m */,
+				252F78EF211226CA00DF61D7 /* KHGMultiplicationQuestion.h */,
+				252F78F0211226CA00DF61D7 /* KHGMultiplicationQuestion.m */,
+				252F78EC211226AE00DF61D7 /* KHGSubtractionQuestion.h */,
+				252F78ED211226AE00DF61D7 /* KHGSubtractionQuestion.m */,
+				252F78E92112267C00DF61D7 /* KHGAdditionQuestion.h */,
+				252F78EA2112267C00DF61D7 /* KHGAdditionQuestion.m */,
+				252F78E621120BC700DF61D7 /* QuestionManager.h */,
+				252F78E721120BC700DF61D7 /* QuestionManager.m */,
 				25E6FED12110EEB3000A6418 /* ScoreKeeper.h */,
 				25E6FED22110EEB3000A6418 /* ScoreKeeper.m */,
 				25E6FECE2110E7D8000A6418 /* InputHandler.h */,
 				25E6FECF2110E7D8000A6418 /* InputHandler.m */,
-				254BBD4B2110D14E006AB120 /* AdditionQuestion.h */,
-				254BBD4C2110D14E006AB120 /* AdditionQuestion.m */,
+				254BBD4B2110D14E006AB120 /* KHGQuestion.h */,
+				254BBD4C2110D14E006AB120 /* KHGQuestion.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -133,10 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252F78E821120BC700DF61D7 /* QuestionManager.m in Sources */,
 				25E6FED32110EEB3000A6418 /* ScoreKeeper.m in Sources */,
 				25C5A2862110C4B30025B981 /* main.m in Sources */,
+				252F78EE211226AE00DF61D7 /* KHGSubtractionQuestion.m in Sources */,
 				25E6FED02110E7D8000A6418 /* InputHandler.m in Sources */,
-				254BBD4D2110D14E006AB120 /* AdditionQuestion.m in Sources */,
+				252F78F4211226DD00DF61D7 /* KHGDivisionQuestion.m in Sources */,
+				252F78EB2112267C00DF61D7 /* KHGAdditionQuestion.m in Sources */,
+				252F78F1211226CA00DF61D7 /* KHGMultiplicationQuestion.m in Sources */,
+				254BBD4D2110D14E006AB120 /* KHGQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
